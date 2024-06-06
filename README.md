@@ -1,5 +1,5 @@
 <h1 align="center">
-    Linuxmuster-webui7
+    Linuxmuster-adminUI 8
 </h1>
 
 <p align="center">
@@ -19,11 +19,10 @@
 
 ## Features
 
-Next generation web interface for linuxmuster.net v7, which provides:
+Next generation admin web interface for linuxmuster.net v8, which provides:
 
  * user management,
  * device management,
- * class and projects management for each teacher,
  * quota and school settings,
  * Linbo management,
  * and much more !
@@ -35,7 +34,7 @@ Linuxmuster.net official | ✅  YES
 [Community support](https://ask.linuxmuster.net) | ✅  YES*
 Actively developed | ✅  YES
 Maintainer organisation |  Linuxmuster.net
-Primary maintainer | arnaud@linuxmuster.net  / andreas.till@netzint.de  
+Primary maintainer | arnaud@linuxmuster.net 
     
 \* The linuxmuster community consits of people who are nice and happy to help. They are not directly involved in the development though, and might not be able to help in all cases.
 
@@ -67,31 +66,3 @@ Primary maintainer | arnaud@linuxmuster.net  / andreas.till@netzint.de
         </td>
     </tr>
 </table>
-
-## Installation
-
-### 1. Import key:
-
-```bash
-wget -qO- "https://deb.linuxmuster.net/pub.gpg" | gpg --dearmour -o /usr/share/keyrings/linuxmuster.net.gpg
-```
-
-### 2. Add repo:
-
-##### Linuxmuster 7.2 ( testing )
-
-```bash
-sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/linuxmuster.net.gpg] https://deb.linuxmuster.net/ lmn72 main" > /etc/apt/sources.list.d/lmn72.list'
-```
-
-##### Linuxmuster 7.1 ( stable )
-
-```bash
-sudo sh -c 'echo "deb [arch=amd64 signed-by=/usr/share/keyrings/linuxmuster.net.gpg] https://deb.linuxmuster.net/ lmn71 main" > /etc/apt/sources.list.d/lmn71.list'
-```
-
-### 3. Apt update
-
-```bash
-sudo apt update && sudo apt install linuxmuster-webui7
-```
