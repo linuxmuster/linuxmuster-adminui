@@ -3,8 +3,8 @@
 import os
 import yaml
 
-PLUGIN_PATH = '/usr/lib/linuxmuster-webui/plugins'
-PERMISSIONS_TARGET = '/usr/lib/linuxmuster-webui/etc/default-ui-permissions.ini'
+PLUGIN_PATH = '/usr/lib/linuxmuster-adminui/plugins'
+PERMISSIONS_TARGET = '/usr/lib/linuxmuster-adminui/etc/default-ui-permissions.ini'
 
 permissions = {
     'globaladministrator': [],
@@ -33,7 +33,7 @@ with open(PERMISSIONS_TARGET, 'w') as target:
         target.write("\n")
         target.write(f"[{role}]\n")
         for permission in permissions[role]:
-            target.write(f"    WEBUI_PERMISSIONS={permission}\n")
+            target.write(f"    ADMINUI_PERMISSIONS={permission}\n")
 
 
 

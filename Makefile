@@ -14,16 +14,16 @@ build:
 	ajenti-dev-multitool --build
 
 run:
-	/usr/local/bin/ajenti-panel -v --autologin --stock-plugins --plugins usr/lib/linuxmuster-webui/plugins $(CONFIGFILE)
+	/usr/local/bin/ajenti-panel -v --autologin --stock-plugins --plugins usr/lib/linuxmuster-adminui/plugins $(CONFIGFILE)
 
 rundev:
-	/usr/local/bin/ajenti-panel -v --autologin --stock-plugins --plugins usr/lib/linuxmuster-webui/plugins --dev $(CONFIGFILE)
+	/usr/local/bin/ajenti-panel -v --autologin --stock-plugins --plugins usr/lib/linuxmuster-adminui/plugins --dev $(CONFIGFILE)
 
 rundevlogin:
-	/usr/local/bin/ajenti-panel -v --stock-plugins --plugins usr/lib/linuxmuster-webui/plugins --dev $(CONFIGFILE)
+	/usr/local/bin/ajenti-panel -v --stock-plugins --plugins usr/lib/linuxmuster-adminui/plugins --dev $(CONFIGFILE)
 
 runprod:
-	/usr/local/bin/ajenti-panel --stock-plugins --plugins usr/lib/linuxmuster-webui/plugins $(CONFIGFILE)
+	/usr/local/bin/ajenti-panel --stock-plugins --plugins usr/lib/linuxmuster-adminui/plugins $(CONFIGFILE)
 
 push-crowdin:
 	ajenti-dev-multitool --xgettext

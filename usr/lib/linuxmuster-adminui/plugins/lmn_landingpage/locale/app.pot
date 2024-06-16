@@ -17,146 +17,146 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/partial/index.html:31
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/partial/index.html:31
 msgid "Account Information"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/partial/index.html:22
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/partial/index.html:22
 msgid "But keep in mind:"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/partial/index.html:88
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/partial/index.html:88
 msgid "Change my data"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/partial/index.html:39
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/partial/index.html:39
 msgid "Change password"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/partial/customFields.modal.html:73
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/partial/webappqr.modal.html:36
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/partial/customFields.modal.html:73
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/partial/webappqr.modal.html:36
 msgid "Close"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/partial/index.html:64
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/partial/index.html:64
 msgid "Cloudquota Calculated in MB:"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/partial/webappqr.modal.html:24
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/partial/webappqr.modal.html:24
 msgid "Easy setup"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/partial/webappqr.modal.html:26
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/partial/webappqr.modal.html:26
 msgid "For easy setup, please scan your personal code in the app:<br>"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/partial/index.html:110
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/partial/index.html:110
 msgid "Groups"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/partial/index.html:15
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/partial/index.html:15
 msgid "Hello {{user.givenName}} {{user.sn}},"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/partial/index.html:35
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/partial/index.html:35
 msgid "Mail:"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/partial/index.html:65
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/partial/index.html:65
 msgid "Mailquota Calculated in MB:"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/partial/index.html:95
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/partial/webappqr.modal.html:2
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/partial/index.html:95
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/partial/webappqr.modal.html:2
 msgid "Mobile access"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/partial/index.html:71
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/partial/index.html:71
 msgid "My informations"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/partial/index.html:34
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/partial/index.html:34
 msgid "Name:"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/partial/customFields.modal.html:13
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/partial/customFields.modal.html:13
 msgid "Properties"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/partial/index.html:47
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/partial/index.html:47
 msgid "Quotas"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/partial/index.html:37
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/partial/index.html:37
 msgid "Role:"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/partial/index.html:36
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/partial/index.html:36
 msgid "School:"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/partial/webappqr.modal.html:7
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/partial/webappqr.modal.html:7
 msgid "Setup guide for iOS"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/partial/webappqr.modal.html:8
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/partial/webappqr.modal.html:8
 msgid ""
 "To set up mobile access to the school server from iOS based devices, please "
 "proceed as follows:"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/partial/index.html:21
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/partial/index.html:21
 msgid "Use the sidebar to navigate through the options."
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/partial/customFields.modal.html:3
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/partial/customFields.modal.html:3
 msgid "User Details"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/partial/index.html:7
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/partial/index.html:7
 msgid "Welcome to Linuxmuster.net version 7.2 !"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/partial/index.html:23
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/partial/index.html:23
 msgid "With great power comes great responsibility!"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/partial/index.html:98
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/partial/index.html:98
 msgid ""
 "You can access the school server from many mobile devices.\n"
 "                        Select your operating system to see how it works."
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/partial/webappqr.modal.html:21
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/partial/webappqr.modal.html:21
 msgid "Your password"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/partial/index.html:18
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/partial/index.html:18
 msgid ""
 "use the sidebar to navigate through the options. You can start by using the "
 "Enroll module to subscribe to your classes."
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/js/controllers/index.controller.coffee:7
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/js/controllers/index.controller.coffee:7
 msgid "Home"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/js/controllers/index.controller.coffee:28
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/js/controllers/index.controller.coffee:28
 msgid "NO LIMIT"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/js/controllers/index.controller.coffee:87
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/js/controllers/index.controller.coffee:87
 msgid "Class"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/js/controllers/index.controller.coffee:89
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/js/controllers/index.controller.coffee:89
 msgid "Teachers"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/js/controllers/index.controller.coffee:91
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/js/controllers/index.controller.coffee:91
 msgid "Printers"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_landingpage/resources/js/controllers/index.controller.coffee:93
+#: usr/lib/linuxmuster-adminui/plugins/lmn_landingpage/resources/js/controllers/index.controller.coffee:93
 msgid "Project"
 msgstr ""

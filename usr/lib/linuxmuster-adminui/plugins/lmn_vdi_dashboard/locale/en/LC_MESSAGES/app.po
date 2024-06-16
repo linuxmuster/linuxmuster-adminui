@@ -17,27 +17,27 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_vdi_dashboard/resources/partial/index.html:14
-#: usr/lib/linuxmuster-webui/plugins/lmn_vdi_dashboard/resources/partial/index.html:30
+#: usr/lib/linuxmuster-adminui/plugins/lmn_vdi_dashboard/resources/partial/index.html:14
+#: usr/lib/linuxmuster-adminui/plugins/lmn_vdi_dashboard/resources/partial/index.html:30
 msgid "Available VMs:"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_vdi_dashboard/resources/partial/index.html:25
+#: usr/lib/linuxmuster-adminui/plugins/lmn_vdi_dashboard/resources/partial/index.html:25
 msgid "No VMs avaliable!"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_vdi_dashboard/resources/partial/index.html:1
+#: usr/lib/linuxmuster-adminui/plugins/lmn_vdi_dashboard/resources/partial/index.html:1
 msgid "VDI Desktops"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_vdi_dashboard/resources/partial/index.html:5
+#: usr/lib/linuxmuster-adminui/plugins/lmn_vdi_dashboard/resources/partial/index.html:5
 msgid "VDI Groups"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_vdi_dashboard/main.py:30
+#: usr/lib/linuxmuster-adminui/plugins/lmn_vdi_dashboard/main.py:30
 msgid "VDI Dashboard permission"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_vdi_dashboard/resources/js/controllers/index.controller.es:2
+#: usr/lib/linuxmuster-adminui/plugins/lmn_vdi_dashboard/resources/js/controllers/index.controller.es:2
 msgid "Lmn_vdi_dashboard"
 msgstr ""

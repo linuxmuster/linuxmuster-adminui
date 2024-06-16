@@ -17,23 +17,23 @@ msgstr ""
 "X-Crowdin-File: /2.0/lmn_smbclient.po\n"
 "X-Crowdin-File-ID: 226\n"
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_smbclient/views/lmnsmbclient.py:586
+#: usr/lib/linuxmuster-adminui/plugins/lmn_smbclient/views/lmnsmbclient.py:586
 msgid "Ticket successfully refreshed"
 msgstr "Ticket actualisé avec succès"
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_smbclient/views/lmnsmbclient.py:589
+#: usr/lib/linuxmuster-adminui/plugins/lmn_smbclient/views/lmnsmbclient.py:589
 msgid "Timeout while trying to get a kerberos ticket"
 msgstr "Délai d'attente écoulé en essayant d'obtenir un ticket kerberos"
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_smbclient/resources/js/directives/smbupload.directive.coffee:48
+#: usr/lib/linuxmuster-adminui/plugins/lmn_smbclient/resources/js/directives/smbupload.directive.coffee:48
 msgid "Uploaded "
 msgstr "Téléversé "
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_smbclient/resources/js/services/smbclient.service.es:17
+#: usr/lib/linuxmuster-adminui/plugins/lmn_smbclient/resources/js/services/smbclient.service.es:17
 msgid " moved!"
 msgstr " déplacé !"
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_smbclient/resources/js/services/smbclient.service.es:28
+#: usr/lib/linuxmuster-adminui/plugins/lmn_smbclient/resources/js/services/smbclient.service.es:28
 msgid " copied!"
 msgstr " copié !"
 

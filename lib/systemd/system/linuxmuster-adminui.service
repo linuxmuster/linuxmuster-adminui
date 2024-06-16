@@ -1,11 +1,11 @@
 [Unit]
-Description=linuxmuster.net WebUI
+Description=linuxmuster.net AdminUI
 After=network.target
 
 [Service]
 Type=forking
 PIDFile=/var/run/ajenti.pid
-ExecStart=/usr/bin/python3 /usr/local/bin/ajenti-panel -d --stock-plugins --plugins /usr/lib/linuxmuster-webui/plugins
+ExecStart=/usr/bin/python3 /usr/local/bin/ajenti-panel -d --stock-plugins --plugins /usr/lib/linuxmuster-adminui/plugins
 
 [Install]
 WantedBy=multi-user.target

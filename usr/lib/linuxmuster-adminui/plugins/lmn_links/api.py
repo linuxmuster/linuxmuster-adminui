@@ -20,5 +20,5 @@ class ConfigLoader():
             f.write(yaml.safe_dump(self.data, default_flow_style=False, encoding='utf-8', allow_unicode=True))
 
 def loadList():
-    sessionList = ConfigLoader('/etc/linuxmuster/webui/links/links_list.json')
+    sessionList = ConfigLoader('/etc/linuxmuster/adminui/links/links_list.json')
     return sessionList.load()

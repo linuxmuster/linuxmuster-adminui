@@ -1,6 +1,6 @@
-.. linuxmuster-webui7 documentation 
+.. linuxmuster-adminui documentation 
 
-Linuxmuster-webui7's developer documentation
+Linuxmuster-adminui's developer documentation
 ============================================
 
 .. autosummary::
@@ -13,7 +13,7 @@ About
 
 Welcome in this API reference documentation !
 
-Linuxmuster-webui7 is a part of the `linuxmuster.net <https://www.linuxmuster.net/de/home/>`_'s project which provides a complete environment for school network management.
+Linuxmuster-adminui is a part of the `linuxmuster.net <https://www.linuxmuster.net/de/home/>`_'s project which provides a complete environment for school network management.
 
 You can find the whole description of the install process on the `official documentation page <https://docs.linuxmuster.net/de/latest/>`_ of the project.
 
@@ -22,7 +22,7 @@ In particularly, some `appliances (Proxmox, XCP-ng and KVM) are prepared <https:
 Ajenti
 ------
 
-Linuxmuster-webui7 is based on the server admin panel `Ajenti <https://github.com/ajenti/ajenti/tree/master>`_ and only adds some plugins for a complete integration into a linuxmuster.net environment. The plugins are written in `Python <https://www.python.org/>`_ and `AngularJS <https://angularjs.org/>`_.
+Linuxmuster-adminui is based on the server admin panel `Ajenti <https://github.com/ajenti/ajenti/tree/master>`_ and only adds some plugins for a complete integration into a linuxmuster.net environment. The plugins are written in `Python <https://www.python.org/>`_ and `AngularJS <https://angularjs.org/>`_.
 
 If you want to learn or contribute to this project, you need first to be ease with `Ajenti's install and dev documentation <http://docs.ajenti.org/en/latest/index.html>`_.
 

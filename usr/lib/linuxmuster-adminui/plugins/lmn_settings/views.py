@@ -219,7 +219,7 @@ class Handler(HttpPlugin):
     @endpoint(api=True)
     def handle_api_read_custom_config(self, http_context, role=''):
         """
-        Read webui yaml config and return the settings for custom fields.
+        Read adminui yaml config and return the settings for custom fields.
 
         :param http_context: HttpContext
         :type http_context: HttpContext
@@ -303,7 +303,7 @@ class Handler(HttpPlugin):
     @endpoint(api=True)
     def handle_api_save_custom_config(self, http_context):
         """
-        Save customs sophomorix fields settings in the webui yaml config.
+        Save customs sophomorix fields settings in the adminui yaml config.
 
         :param http_context: HttpContext
         :type http_context: HttpContext

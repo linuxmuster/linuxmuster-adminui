@@ -17,14 +17,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_links/resources/partial/index.html:2
+#: usr/lib/linuxmuster-adminui/plugins/lmn_links/resources/partial/index.html:2
 msgid "Currently no links defined!"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_links/resources/partial/index.html:10
+#: usr/lib/linuxmuster-adminui/plugins/lmn_links/resources/partial/index.html:10
 msgid "Open"
 msgstr ""
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_links/resources/js/controllers/index.controller.es:2
+#: usr/lib/linuxmuster-adminui/plugins/lmn_links/resources/js/controllers/index.controller.es:2
 msgid "Links"
 msgstr ""

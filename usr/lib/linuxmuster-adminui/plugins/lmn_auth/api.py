@@ -185,7 +185,7 @@ class LMAuthenticationProvider(AuthenticationProvider):
 
         # Does the user exist in LDAP ?
         try:
-            userAttrs = self.get_ldap_user(username, attributes=['dn', 'sophomorixWebuiPermissionsCalculated', 'permissions'])
+            userAttrs = self.get_ldap_user(username, attributes=['dn', 'sophomorixAdminuiPermissionsCalculated', 'permissions'])
             if not userAttrs or not userAttrs.get('dn', ''):
                 return False
             # TODO authorize access to exam users ?
@@ -228,8 +228,8 @@ class LMAuthenticationProvider(AuthenticationProvider):
         auth_info = getattr(self.context.session, 'auth_info', None)
         if auth_info is None:
             permissions = {}
-            webuiPermissions = self.lr.get(f'/users/{username}').get('sophomorixWebuiPermissionsCalculated', [])
-            for perm in webuiPermissions:
+            adminuiPermissions = self.lr.get(f'/users/{username}').get('sophomorixAdminuiPermissionsCalculated', [])
+            for perm in adminuiPermissions:
                 module, value = perm.split(': ')
                 try:
                     permissions[module] = value == 'true'
@@ -288,10 +288,10 @@ class LMAuthenticationProvider(AuthenticationProvider):
             if role in groupmembership:
                 try:
                     gid = grp.getgrnam(role).gr_gid
-                    logging.debug(f"Running Webui as {role}")
+                    logging.debug(f"Running Adminui as {role}")
                 except KeyError:
                     gid = grp.getgrnam('nogroup').gr_gid
-                    logging.debug(f"Context group not found, running Webui as {nogroup}")
+                    logging.debug(f"Context group not found, running Adminui as {nogroup}")
                 return gid
         return None
 
@@ -320,10 +320,10 @@ class LMAuthenticationProvider(AuthenticationProvider):
 
         try:
             uid = pwd.getpwnam(username).pw_uid
-            logging.debug(f"Running Webui as {username}")
+            logging.debug(f"Running Adminui as {username}")
         except KeyError:
             uid = pwd.getpwnam('nobody').pw_uid
-            logging.debug(f"Context user not found, running Webui as {nobody}")
+            logging.debug(f"Context user not found, running Adminui as {nobody}")
 
         return uid
 
@@ -469,14 +469,14 @@ class UserLdapConfig(UserConfigProvider):
         if self.user == 'root':
             self.data = yaml.load(open('/root/.config/ajenti.yml'), Loader=yaml.SafeLoader)
         else:
-            ## Load ldap attribute webuidashboard
+            ## Load ldap attribute adminuidashboard
             userAttrs = AuthenticationService.get(self.context).get_provider().get_ldap_user(self.user)
             try:
-                self.data = json.loads(userAttrs['sophomorixWebuiDashboard'])
+                self.data = json.loads(userAttrs['sophomorixAdminuiDashboard'])
             except Exception:
                 logging.warning(
                     f'Error retrieving userconfig from {self.user}, '
-                    f'value: {userAttrs["sophomorixWebuiDashboard"]}.'
+                    f'value: {userAttrs["sophomorixAdminuiDashboard"]}.'
                     f'This will be overwritten.'
                 )
                 self.data = {}
@@ -493,7 +493,7 @@ class UserLdapConfig(UserConfigProvider):
                 ).decode('utf-8'))
             self.harden()
         else:
-            ## Save ldap attribute webuidashboard
+            ## Save ldap attribute adminuidashboard
             ldap_filter = """(&
                             (cn=%s)
                             (objectClass=user)
@@ -504,7 +504,7 @@ class UserLdapConfig(UserConfigProvider):
                                 (sophomorixRole=student)
                             )
                         )"""
-            ldap_attrs = ['sophomorixWebuiDashboard']
+            ldap_attrs = ['sophomorixAdminuiDashboard']
 
             # Apply escape chars on self.user value
             searchFilter = ldap.filter.filter_format(ldap_filter, [self.user])
@@ -529,7 +529,7 @@ class UserLdapConfig(UserConfigProvider):
             except ldap.LDAPError as e:
                 print(e)
 
-            userconfig_new = {'sophomorixWebuiDashboard': [json.dumps(self.data).encode()]}
+            userconfig_new = {'sophomorixAdminuiDashboard': [json.dumps(self.data).encode()]}
 
             ldif = modlist.modifyModlist(userconfig_old,userconfig_new)
             l.modify_s(dn,ldif)

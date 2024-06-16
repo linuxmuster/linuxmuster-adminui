@@ -1,8 +1,8 @@
 #!/bin/bash
 setupini="/var/lib/linuxmuster/setup.ini"
-ajtemplate="/usr/lib/linuxmuster-webui/etc/config_templates/template-ajenti.yml"
-wutemplate="/usr/lib/linuxmuster-webui/etc/config_templates/template-webui.yml"
-wucfg="/etc/linuxmuster/webui/config.yml"
+ajtemplate="/usr/lib/linuxmuster-adminui/etc/config_templates/template-ajenti.yml"
+wutemplate="/usr/lib/linuxmuster-adminui/etc/config_templates/template-adminui.yml"
+wucfg="/etc/linuxmuster/adminui/config.yml"
 ajcfg="/etc/ajenti/config.yml"
 
 basedn=$(cat $setupini |  grep basedn | awk '{print $3}')
@@ -12,7 +12,7 @@ language=$(cat $setupini |  grep country | awk '{print $3}')
 servername=$(cat $setupini |  grep servername | awk '{print $3}')
 domainname=$(cat $setupini |  grep domainname | awk '{print $3}')
 
-mkdir -p /etc/linuxmuster/webui
+mkdir -p /etc/linuxmuster/adminui
 
 if [ -f $wucfg ]; then
    rm  $wucfg
@@ -38,7 +38,7 @@ sed -i s/%%LANGUAGE%%/$language/ $ajcfg
 sed -i s/%%SERVERNAME%%/$servername/ $ajcfg
 sed -i s/%%DOMAINNAME%%/$domainname/ $ajcfg
 
-echo "Bundle certificate for webui"
+echo "Bundle certificate for adminui"
 cat /etc/linuxmuster/ssl/$servername.key.pem /etc/linuxmuster/ssl/$servername.cert.pem >  /etc/linuxmuster/ssl/$servername.cert.bundle.pem
 
 echo "Run Sophomorix-UI to add permissions"

@@ -26,9 +26,9 @@ except Exception:
     print("Can not read configuration from smb.conf")
     samba_domain, samba_netbios, samba_realm = '', '', ''
 
-p(f"Samba realm used by the Webui --> {samba_realm}")
-p(f"Samba netbios used by the Webui --> {samba_netbios}")
-p(f"Samba domain used by the Webui --> {samba_domain}")
+p(f"Samba realm used by the Adminui --> {samba_realm}")
+p(f"Samba netbios used by the Adminui --> {samba_netbios}")
+p(f"Samba domain used by the Adminui --> {samba_domain}")
 p("Samba domain to try (optional, something like server.linuxmuster.lan):", end="")
 domain_user = input()
 

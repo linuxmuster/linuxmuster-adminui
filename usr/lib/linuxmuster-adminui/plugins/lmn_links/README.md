@@ -1,6 +1,6 @@
 # LMN7 Links Plugin
 
-Create config file /etc/linuxmuster/webui/links/links_list.json
+Create config file /etc/linuxmuster/adminui/links/links_list.json
 
 ```
 [

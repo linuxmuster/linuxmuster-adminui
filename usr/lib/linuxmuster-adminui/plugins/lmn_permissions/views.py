@@ -146,7 +146,7 @@ class Handler(HttpPlugin):
 
 
         ## Load default ui permissions from permissions.yml files
-        plugins_path = '/usr/lib/linuxmuster-webui/plugins'
+        plugins_path = '/usr/lib/linuxmuster-adminui/plugins'
 
         for plugin in os.listdir(plugins_path):
             path = os.path.join(plugins_path, plugin)
@@ -217,7 +217,7 @@ class Handler(HttpPlugin):
         sidebar = http_context.json_body()['sidebar']
         pluginDict = http_context.json_body()['pluginDict']
 
-        plugins_path = '/usr/lib/linuxmuster-webui/plugins'
+        plugins_path = '/usr/lib/linuxmuster-adminui/plugins'
         roles = [
             'globaladministrator',
             'schooladministrator',

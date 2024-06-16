@@ -22,7 +22,7 @@ builtins._ = lambda x:x
 
 #aj_plugin_path = aj.__path__[0][:-3]
 aj_plugin_path = '../../ajenti/plugins'
-lm_plugin_path = '../usr/lib/linuxmuster-webui/plugins' # Path relative to docs sources
+lm_plugin_path = '../usr/lib/linuxmuster-adminui/plugins' # Path relative to docs sources
 
 aj.context = aj.api.Context()
 aj.init()
@@ -43,7 +43,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'linuxmuster-webui7'
+project = 'linuxmuster-adminui'
 year = datetime.now().strftime('%Y')
 copyright = f'Andreas Till & Arnaud Kientz - {year}'
 author = 'Andreas Till & Arnaud Kientz'
@@ -51,7 +51,7 @@ author = 'Andreas Till & Arnaud Kientz'
 def setup(app):
     app.add_css_file("theme_overrides.css")
 
-version = subprocess.check_output('apt-cache policy linuxmuster-webui7 | grep Candidat', shell=True).decode().split(':')[1].strip()
+version = subprocess.check_output('apt-cache policy linuxmuster-adminui | grep Candidat', shell=True).decode().split(':')[1].strip()
 release = version
 
 language = 'en_GB'
@@ -70,7 +70,7 @@ html_sidebars = {
     ]
 }
 
-htmlhelp_basename = 'linuxmuster-webui7doc'
+htmlhelp_basename = 'linuxmuster-adminuidoc'
 
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
@@ -91,19 +91,19 @@ latex_elements = {
 }
 
 latex_documents = [
-    (master_doc, 'linuxmuster-webui7.tex', 'linuxmuster-webui7 Documentation',
+    (master_doc, 'linuxmuster-adminui.tex', 'linuxmuster-adminui Documentation',
      'Andreas Till \\& Arnaud Kientz', 'manual'),
 ]
 
 man_pages = [
-    (master_doc, 'linuxmuster-webui7', 'linuxmuster-webui7 Documentation',
+    (master_doc, 'linuxmuster-adminui', 'linuxmuster-adminui Documentation',
      [author], 1)
 ]
 
 
 texinfo_documents = [
-    (master_doc, 'linuxmuster-webui7', 'linuxmuster-webui7 Documentation',
-     author, 'linuxmuster-webui7', 'One line description of project.',
+    (master_doc, 'linuxmuster-adminui', 'linuxmuster-adminui Documentation',
+     author, 'linuxmuster-adminui', 'One line description of project.',
      'Miscellaneous'),
 ]
 

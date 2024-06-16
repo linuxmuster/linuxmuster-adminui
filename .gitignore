@@ -9,7 +9,7 @@ app.po~
 .vscode
 tests/e2e/authconfig.json
 docs/build/*
-usr/lib/linuxmuster-webui/plugins/extra_*
-usr/lib/linuxmuster-webui/etc/default-*
-usr/lib/linuxmuster-webui/plugins/ni_*
-usr/lib/linuxmuster-webui/plugins/lmp_*
+usr/lib/linuxmuster-adminui/plugins/extra_*
+usr/lib/linuxmuster-adminui/etc/default-*
+usr/lib/linuxmuster-adminui/plugins/ni_*
+usr/lib/linuxmuster-adminui/plugins/lmp_*

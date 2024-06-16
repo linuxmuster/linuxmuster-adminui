@@ -14,11 +14,11 @@ from .lmnfile import LMNFile
 from configparser import ConfigParser
 from time import time
 
-# Load Webui settings
-config_path = '/etc/linuxmuster/webui/config.yml'
+# Load Adminui settings
+config_path = '/etc/linuxmuster/adminui/config.yml'
 if os.path.isfile(config_path):
-    with LMNFile(config_path, 'r') as webui:
-        lmconfig = webui.read()
+    with LMNFile(config_path, 'r') as adminui:
+        lmconfig = adminui.read()
 
         # LDAP config for auth
         ldap_config = lmconfig['linuxmuster']['ldap']

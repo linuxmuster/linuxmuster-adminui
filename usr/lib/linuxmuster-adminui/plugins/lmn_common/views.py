@@ -240,7 +240,7 @@ class Handler(HttpPlugin):
     @endpoint(api=True)
     def handle_get_display_options(self, http_context):
         """
-        Provide display options stored in the webui config file.
+        Provide display options stored in the adminui config file.
 
         :param http_context: HttpContext
         :type http_context: HttpContext

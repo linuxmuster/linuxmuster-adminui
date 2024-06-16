@@ -7,7 +7,7 @@
         <img src="https://img.shields.io/badge/Python-v3-green" alt="Badge License" />
     </a>
     <a href="https://raw.githubusercontent.com/ajenti/ajenti/master/LICENSE"> 
-        <img src="https://img.shields.io/github/license/linuxmuster/linuxmuster-webui7?label=License" alt="Badge License" />
+        <img src="https://img.shields.io/github/license/linuxmuster/linuxmuster-adminui?label=License" alt="Badge License" />
     </a>
     <a href="https://ask.linuxmuster.net">
         <img src="https://img.shields.io/discourse/users?logo=discourse&logoColor=white&server=https%3A%2F%2Fask.linuxmuster.net" alt="Community Forum"/>
@@ -43,25 +43,25 @@ Primary maintainer | arnaud@linuxmuster.net
 <table align="center">
     <tr>
         <td align="center">
-            <a href="https://raw.githubusercontent.com/linuxmuster/linuxmuster-webui7/release/docs_src/_static/webui-login.png">
-                <img src="https://raw.githubusercontent.com/linuxmuster/linuxmuster-webui7/release/docs_src/_static/webui-login.png" alt="Screenshot Webui Login" width="500px" />
+            <a href="https://raw.githubusercontent.com/linuxmuster/linuxmuster-adminui/release/docs_src/_static/adminui-login.png">
+                <img src="https://raw.githubusercontent.com/linuxmuster/linuxmuster-adminui/release/docs_src/_static/adminui-login.png" alt="Screenshot Adminui Login" width="500px" />
             </a>
         </td>
         <td align="center">
-            <a href="https://raw.githubusercontent.com/linuxmuster/linuxmuster-webui7/release/docs_src/_static/webui-class.png">
-                <img src="https://raw.githubusercontent.com/linuxmuster/linuxmuster-webui7/release/docs_src/_static/webui-class.png" alt="Screenshot Webui Session" width="500px" />
+            <a href="https://raw.githubusercontent.com/linuxmuster/linuxmuster-adminui/release/docs_src/_static/adminui-class.png">
+                <img src="https://raw.githubusercontent.com/linuxmuster/linuxmuster-adminui/release/docs_src/_static/adminui-class.png" alt="Screenshot Adminui Session" width="500px" />
             </a>
         </td>
     </tr>
     <tr>
         <td align="center">
-            <a href="https://raw.githubusercontent.com/linuxmuster/linuxmuster-webui7/release/docs_src/_static/webui-linbo.png">
-                <img src="https://raw.githubusercontent.com/linuxmuster/linuxmuster-webui7/release/docs_src/_static/webui-linbo.png" alt="Screenshot Webui Linbo" width="500px" />
+            <a href="https://raw.githubusercontent.com/linuxmuster/linuxmuster-adminui/release/docs_src/_static/adminui-linbo.png">
+                <img src="https://raw.githubusercontent.com/linuxmuster/linuxmuster-adminui/release/docs_src/_static/adminui-linbo.png" alt="Screenshot Adminui Linbo" width="500px" />
             </a>
         </td>
         <td align="center">
-            <a href="https://raw.githubusercontent.com/linuxmuster/linuxmuster-webui7/release/docs_src/_static/webui-user.png">
-                <img src="https://raw.githubusercontent.com/linuxmuster/linuxmuster-webui7/release/docs_src/_static/webui-user.png" alt="Screenshot Webui User" width="500px" />
+            <a href="https://raw.githubusercontent.com/linuxmuster/linuxmuster-adminui/release/docs_src/_static/adminui-user.png">
+                <img src="https://raw.githubusercontent.com/linuxmuster/linuxmuster-adminui/release/docs_src/_static/adminui-user.png" alt="Screenshot Adminui User" width="500px" />
             </a>
         </td>
     </tr>

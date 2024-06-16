@@ -17,28 +17,28 @@ msgstr ""
 "X-Crowdin-File: /2.0/lmn_vdi_dashboard.po\n"
 "X-Crowdin-File-ID: 205\n"
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_vdi_dashboard/resources/partial/index.html:14
-#: usr/lib/linuxmuster-webui/plugins/lmn_vdi_dashboard/resources/partial/index.html:30
+#: usr/lib/linuxmuster-adminui/plugins/lmn_vdi_dashboard/resources/partial/index.html:14
+#: usr/lib/linuxmuster-adminui/plugins/lmn_vdi_dashboard/resources/partial/index.html:30
 msgid "Available VMs:"
 msgstr "Verfügbare VMs:"
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_vdi_dashboard/resources/partial/index.html:25
+#: usr/lib/linuxmuster-adminui/plugins/lmn_vdi_dashboard/resources/partial/index.html:25
 msgid "No VMs avaliable!"
 msgstr "Keine VMs verfügbar!"
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_vdi_dashboard/resources/partial/index.html:1
+#: usr/lib/linuxmuster-adminui/plugins/lmn_vdi_dashboard/resources/partial/index.html:1
 msgid "VDI Desktops"
 msgstr "VDI Desktops"
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_vdi_dashboard/resources/partial/index.html:5
+#: usr/lib/linuxmuster-adminui/plugins/lmn_vdi_dashboard/resources/partial/index.html:5
 msgid "VDI Groups"
 msgstr "VDI-Gruppen"
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_vdi_dashboard/main.py:30
+#: usr/lib/linuxmuster-adminui/plugins/lmn_vdi_dashboard/main.py:30
 msgid "VDI Dashboard permission"
 msgstr "VDI Dashboard-Berechtigung"
 
-#: usr/lib/linuxmuster-webui/plugins/lmn_vdi_dashboard/resources/js/controllers/index.controller.es:2
+#: usr/lib/linuxmuster-adminui/plugins/lmn_vdi_dashboard/resources/js/controllers/index.controller.es:2
 msgid "Lmn_vdi_dashboard"
 msgstr "Lmn_vdi_Dashboard"
 

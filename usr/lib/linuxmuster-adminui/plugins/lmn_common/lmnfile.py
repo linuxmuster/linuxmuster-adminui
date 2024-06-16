@@ -20,8 +20,8 @@ from .fieldnames import csv_fieldnames
 csv.field_size_limit(2**20)
 
 ALLOWED_PATHS = [
-                # Webui settings
-                '/etc/linuxmuster/webui/config.yml',
+                # Adminui settings
+                '/etc/linuxmuster/adminui/config.yml',
                 # used for school.conf or *.csv in lmn_settings, lmn_devices and lmn_users
                 '/etc/linuxmuster/sophomorix/',
                 # used in lmn_linbo for start.conf
@@ -35,7 +35,7 @@ ALLOWED_PATHS = [
                 # user in setup wizard during install
                 '/tmp/setup.ini',
                 # used in lmn_permissions
-                '/usr/lib/linuxmuster-webui/plugins',
+                '/usr/lib/linuxmuster-adminui/plugins',
                 ]
 
 EMPTY_LINE_MARKER = '###EMPTY#LINE'
