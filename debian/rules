@@ -70,10 +70,10 @@ install: build
 	# Add here commands to install the package.
 	dh_install
 	# fixing default not being installed
-	mkdir -p debian/linuxmuster-webui7
-	cp -r lib debian/linuxmuster-webui7
-	rsync -avr --exclude='usr/lib/linuxmuster-webui/plugins/ni_*' --exclude='usr/lib/linuxmuster-webui/etc/.installed' usr debian/linuxmuster-webui7
-#	cp -r usr debian/linuxmuster-webui7
+	mkdir -p debian/linuxmuster-adminui8
+	cp -r lib debian/linuxmuster-adminui8
+	rsync -avr --exclude='usr/lib/linuxmuster-adminui/plugins/ni_*' --exclude='usr/lib/linuxmuster-adminui/etc/.installed' usr debian/linuxmuster-adminui8
+#	cp -r usr debian/linuxmuster-adminui8
 
 # Build architecture-independent files here.
 # Pass -i to all debhelper commands in this target to reduce clutter.
