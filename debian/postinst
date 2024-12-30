@@ -61,6 +61,10 @@ Installing linuxmuster-adminui
 
             msg "Copy default config files for adminui"
             mkdir -p /etc/linuxmuster/adminui/
+            
+            # Temporary fix for gipc and gevent in Ubuntu 24.04
+            $PYTHON3 -m pip install gipc gevent -U
+            
             #
             if [ -f $ajcfg ];then
                 msg "Backing up config.yml"
@@ -151,9 +155,18 @@ Updating linuxmuster-adminui
             $PYTHON3 -c 'from socketio import mixins' 2>/dev/null && $PYTHON3 -m pip uninstall -y gevent-socketio-hartwork
 
             # Requirements must always be checked
+<<<<<<< HEAD
             /usr/bin/python3 -m pip install -r $adminuietc/requirements.txt
             
             msg "Set default sophomorix adminui rights"
+=======
+            $PYTHON3 -m pip install -r $webuietc/requirements.txt
+
+            # Temporary fix for gipc and gevent in Ubuntu 24.04
+            $PYTHON3 -m pip install gipc gevent -U
+
+            msg "Set default sophomorix webui rights"
+>>>>>>> d2ea5010c (Temporary fix for new Ubuntu.)
             $PYTHON3 $update_scripts/merge-permissions.py
             /usr/sbin/sophomorix-ui
             
