@@ -156,10 +156,13 @@ Updating linuxmuster-adminui
 
             # Requirements must always be checked
 <<<<<<< HEAD
+<<<<<<< HEAD
             /usr/bin/python3 -m pip install -r $adminuietc/requirements.txt
             
             msg "Set default sophomorix adminui rights"
 =======
+=======
+>>>>>>> d2ea5010c (Temporary fix for new Ubuntu.)
             $PYTHON3 -m pip install -r $webuietc/requirements.txt
 
             # Temporary fix for gipc and gevent in Ubuntu 24.04
