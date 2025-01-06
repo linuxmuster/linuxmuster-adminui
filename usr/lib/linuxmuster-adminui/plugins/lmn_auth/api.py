@@ -20,7 +20,7 @@ import logging
 from jadi import component, service
 from aj.auth import AuthenticationProvider, OSAuthenticationProvider, AuthenticationService
 from aj.config import UserConfigProvider
-from aj.plugins.lmn_common.api import ldap_config as params, lmsetup_schoolname, pwreset_config
+from aj.plugins.lmn_common.api import ldap_config as params, lmsetup_schoolname, pwreset_config, allowed_roles
 from aj.plugins.lmn_common.multischool import SchoolManager
 from aj.api.endpoint import EndpointError
 from linuxmusterTools.ldapconnector import LMNLdapReader
@@ -51,6 +51,7 @@ class LMAuthenticationProvider(AuthenticationProvider):
         :return: Dict of values
         :rtype: dict
         """
+
 
         if username.endswith('-exam'):
             return self.lr.get(f'/users/exam/{username}', attributes=attributes)
@@ -199,13 +200,21 @@ class LMAuthenticationProvider(AuthenticationProvider):
 
         # Does the user exist in LDAP ?
         try:
-            userAttrs = self.get_ldap_user(username, attributes=['dn', 'sophomorixAdminuiPermissionsCalculated', 'permissions', 'sophomorixRole'])
-            
+            attributes = ['dn', 'sophomorixWebuiPermissionsCalculated', 'permissions', 'sophomorixRole']
+            userAttrs = self.get_ldap_user(username, attributes=attributes)
+
+            #if 'administrator' not in userAttrs.get('sophomorixRole', ''):
+                #return False
+
             if not userAttrs or not userAttrs.get('dn', ''):
                 return False
-            
-            if 'administrator' not in userAttrs.get('sophomorixRole', ''):
+
+            if userAttrs['sophomorixRole'] not in allowed_roles:
                 return False
+
+            # TODO authorize access to exam users ?
+            # if userAttrs.get('sophomorixRole', '') == 'examuser':
+            #     return False
 
         except KeyError as e:
             return False
