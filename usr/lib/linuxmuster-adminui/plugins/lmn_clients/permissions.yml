@@ -4,9 +4,3 @@ globaladministrator:
 schooladministrator:
 - 'lmn:clients:config: true'
 - 'sidebar:view:/view/lmn_clients: true'
-student:
-- 'lmn:clients:config: false'
-- 'sidebar:view:/view/lmn_clients: false'
-teacher:
-- 'lmn:clients:config: false'
-- 'sidebar:view:/view/lmn_clients: false'

@@ -2,7 +2,3 @@ globaladministrator:
 - 'sidebar:view:/view/lmn/dhcp: true'
 schooladministrator:
 - 'sidebar:view:/view/lmn/dhcp: true'
-student:
-- 'sidebar:view:/view/lmn/dhcp: false'
-teacher:
-- 'sidebar:view:/view/lmn/dhcp: false'
