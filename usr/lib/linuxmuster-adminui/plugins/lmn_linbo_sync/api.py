@@ -6,7 +6,7 @@ import locale
 import time
 import subprocess
 import xml.etree.ElementTree as ElementTree
-from aj.plugins.lmn_common.lmnfile import LMNFile
+from linuxmusterTools.lmnfile import LMNFile
 
 
 LINBO_PATH = '/srv/linbo'

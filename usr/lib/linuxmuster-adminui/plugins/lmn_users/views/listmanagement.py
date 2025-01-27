@@ -13,7 +13,7 @@ from aj.api.http import get, post, HttpPlugin
 from aj.api.endpoint import endpoint, EndpointError, EndpointReturn
 from aj.auth import authorize, AuthenticationService
 from aj.plugins.lmn_common.api import lmn_getSophomorixValue
-from aj.plugins.lmn_common.lmnfile import LMNFile
+from linuxmusterTools.lmnfile import LMNFile
 
 
 @component(HttpPlugin)

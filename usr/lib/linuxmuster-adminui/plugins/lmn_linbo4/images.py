@@ -5,7 +5,7 @@ import logging
 from datetime import datetime
 
 from jadi import service
-from aj.plugins.lmn_common.lmnfile import LMNFile
+from linuxmusterTools.lmnfile import LMNFile
 from aj.api.endpoint import EndpointError
 
 

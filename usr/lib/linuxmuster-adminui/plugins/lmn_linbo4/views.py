@@ -6,7 +6,7 @@ from jadi import component
 from aj.auth import authorize
 from aj.api.http import get, post, delete, HttpPlugin
 from aj.api.endpoint import endpoint, EndpointError
-from aj.plugins.lmn_common.lmnfile import LMNFile
+from linuxmusterTools.lmnfile import LMNFile
 from aj.plugins.lmn_linbo4.images import LinboImageManager
 
 @component(HttpPlugin)
