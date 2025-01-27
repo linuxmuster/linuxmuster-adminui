@@ -2,24 +2,19 @@
 Authentication classes to communicate with LDAP tree and load user's informations.
 """
 
-import logging
 import os
-import stat
 import pexpect
 import re
 import ldap
 import ldap.filter
-import ldap.modlist as modlist
 import subprocess
 import pwd
 import grp
 import simplejson as json
-import yaml
 import logging
 
 from jadi import component, service
 from aj.auth import AuthenticationProvider, OSAuthenticationProvider, AuthenticationService
-from aj.config import UserConfigProvider
 from aj.plugins.lmn_common.api import ldap_config as params, lmsetup_schoolname, pwreset_config, allowed_roles
 from aj.plugins.lmn_common.multischool import SchoolManager
 from aj.api.endpoint import EndpointError
@@ -52,9 +47,6 @@ class LMAuthenticationProvider(AuthenticationProvider):
         :rtype: dict
         """
 
-
-        if username.endswith('-exam'):
-            return self.lr.get(f'/users/exam/{username}', attributes=attributes)
 
         return self.lr.get(f'/users/{username}', attributes=attributes)
 
@@ -209,12 +201,8 @@ class LMAuthenticationProvider(AuthenticationProvider):
             if not userAttrs or not userAttrs.get('dn', ''):
                 return False
 
-            if userAttrs['sophomorixRole'] not in allowed_roles:
+            if userAttrs.get('sophomorixRole', '') not in allowed_roles:
                 return False
-
-            # TODO authorize access to exam users ?
-            # if userAttrs.get('sophomorixRole', '') == 'examuser':
-            #     return False
 
         except KeyError as e:
             return False
