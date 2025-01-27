@@ -1,10 +1,12 @@
 globaladministrator:
 - 'lm:globalsettings: true'
 - 'lm:schoolsettings: true'
+- 'lm:adminuisettings: true'
 - 'sidebar:view:/view/lmn/globalsettings: true'
 - 'sidebar:view:/view/lmn/schoolsettings: true'
 schooladministrator:
 - 'lm:globalsettings: false'
 - 'lm:schoolsettings: true'
+- 'lm:adminuisettings: true'
 - 'sidebar:view:/view/lmn/globalsettings: false'
 - 'sidebar:view:/view/lmn/schoolsettings: true'

@@ -15,7 +15,7 @@ import time
 from aj.api.http import get, post, HttpPlugin
 from aj.api.endpoint import endpoint, EndpointError, EndpointReturn
 from aj.auth import authorize
-from aj.plugins.lmn_common.lmnfile import LMNFile
+from linuxmusterTools.lmnfile import LMNFile
 
 
 @component(HttpPlugin)
@@ -54,6 +54,27 @@ class Handler(HttpPlugin):
                 return f.detect_encoding()
         return None
 
+    @get(r'/api/lmn/adminuisettings')
+    @authorize('lm:adminuisettings')
+    @endpoint(api=True)
+    def handle_api_get_adminuisettings(self, http_context):
+        """
+        Read the adminui config file.
+
+        :param http_context: HttpContext
+        :type http_context: HttpContext
+        :return: Settings in read mode
+        :rtype: dict in read mode
+        """
+
+
+        path = '/etc/linuxmuster/adminui/config.yml'
+
+        with LMNFile(path, 'r') as f:
+            config = dict(f.data)
+            del config['linuxmuster']['ldap']
+
+        return config
 
     @get(r'/api/lmn/schoolsettings')
     @authorize('lm:schoolsettings')
