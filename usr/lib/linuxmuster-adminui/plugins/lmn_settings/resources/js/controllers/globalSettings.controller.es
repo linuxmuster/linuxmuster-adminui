@@ -35,6 +35,7 @@ angular.module('lmn.settings').controller('LMglobalSettingsController', ($scope,
     );
 
     $http.get('/api/lmn/subnets').then((resp) => $scope.subnets = resp.data);
+    $http.get('/api/lmn/adminuisettings').then((resp) => $scope.adminui_config = resp.data);
 
     $scope.removeSubnet = (subnet) => {
         messagebox.show({
