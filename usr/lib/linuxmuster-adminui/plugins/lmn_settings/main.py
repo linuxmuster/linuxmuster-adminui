@@ -39,6 +39,11 @@ class Permissions (PermissionProvider):
                 'default': False,
             },
             {
+                'id': 'lm:adminuisettings',
+                'name': _('Configure AdminUI settings'), # skipcq: PYL-E0602
+                'default': False,
+            },
+            {
                 'id': 'lm:globalsettings',
                 'name': _('Configure global settings'), # skipcq: PYL-E0602
                 'default': False,
