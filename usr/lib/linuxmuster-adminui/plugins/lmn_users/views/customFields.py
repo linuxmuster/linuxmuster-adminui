@@ -8,7 +8,6 @@ from jadi import component
 from aj.api.http import get, post, patch, HttpPlugin
 from aj.api.endpoint import endpoint, EndpointError, EndpointReturn
 from aj.auth import authorize, AuthenticationService
-from aj.plugins.lmn_common.api import lmn_getSophomorixValue
 
 
 @component(HttpPlugin)
@@ -35,11 +34,9 @@ class Handler(HttpPlugin):
         value = http_context.json_body()['value']
 
         try:
-            command = ['sophomorix-user', '-u', user, f'--custom{index}', value, '-jj']
-            result = lmn_getSophomorixValue(command, '')
-        except IndexError:
-            # No error output from sophomorix yet
-            raise EndpointError(None)
+            self.context.userwriter.setattr(user, data={f'sophomorixCustom{index}': value})
+        except Exception as e:
+            raise EndpointError(str(e))
 
     @post(r'/api/lmn/users/(?P<user>[a-z0-9\-_]*)/custommulti/(?P<index>[1-5])')
     @authorize('lm:users:customfields:write')
@@ -60,11 +57,9 @@ class Handler(HttpPlugin):
         value = http_context.json_body()['value']
 
         try:
-            command = ['sophomorix-user', '-u', user, f'--add-custom-multi{index}', value, '-jj']
-            result = lmn_getSophomorixValue(command, '')
-        except IndexError:
-            # No error output from sophomorix yet
-            raise EndpointError(None)
+            self.context.userwriter.setattr(user, data={f'sophomorixCustomMulti{index}': value}, add=True)
+        except Exception as e:
+            raise EndpointError(str(e))
 
     @patch(r'/api/lmn/users/(?P<user>[a-z0-9\-_]*)/custommulti/(?P<index>[1-5])')
     @authorize('lm:users:customfields:write')
@@ -85,11 +80,9 @@ class Handler(HttpPlugin):
         value = http_context.json_body()['value']
 
         try:
-            command = ['sophomorix-user', '-u', user, f'--remove-custom-multi{index}', value, '-jj']
-            result = lmn_getSophomorixValue(command, '')
-        except IndexError:
-            # No error output from sophomorix yet
-            raise EndpointError(None)
+             self.context.userwriter.delattr(user, data={f'sophomorixCustomMulti{index}': value})
+        except Exception as e:
+            raise EndpointError(str(e))
 
     @post(r'/api/lmn/users/(?P<user>[a-z0-9\-_]*)/proxyaddresses')
     @authorize('lm:users:customfields:write')
@@ -110,11 +103,9 @@ class Handler(HttpPlugin):
         address = http_context.json_body()['address']
 
         try:
-            command = ['sophomorix-user', '-u', user, f'--add-proxy-addresses', address, '-jj']
-            result = lmn_getSophomorixValue(command, '')
-        except IndexError:
-            # No error output from sophomorix yet
-            raise EndpointError(None)
+            self.context.userwriter.setattr(user, data={'proxyAddresses': address}, add=True)
+        except Exception as e:
+            raise EndpointError(str(e))
 
     @patch(r'/api/lmn/users/(?P<user>[a-z0-9\-_]*)/proxyaddresses')
     @authorize('lm:users:customfields:write')
@@ -135,12 +126,9 @@ class Handler(HttpPlugin):
         address = http_context.json_body()['address']
 
         try:
-            command = ['sophomorix-user', '-u', user, f'--remove-proxy-addresses',
-                       address, '-jj']
-            result = lmn_getSophomorixValue(command, '')
-        except IndexError:
-            # No error output from sophomorix yet
-            raise EndpointError(None)
+             self.context.userwriter.delattr(user, data={'proxyAddresses': address})
+        except Exception as e:
+            raise EndpointError(str(e))
 
     @get(r'/api/lmn/users/(?P<user>[a-z0-9\-_]*)/customfields')
     @authorize('lm:users:customfields:read')
