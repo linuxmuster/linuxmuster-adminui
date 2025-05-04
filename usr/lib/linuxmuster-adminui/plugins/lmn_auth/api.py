@@ -18,7 +18,7 @@ from aj.auth import AuthenticationProvider, OSAuthenticationProvider, Authentica
 from aj.plugins.lmn_common.api import ldap_config as params, lmsetup_schoolname, pwreset_config, allowed_roles
 from aj.plugins.lmn_common.multischool import SchoolManager
 from aj.api.endpoint import EndpointError
-from linuxmusterTools.ldapconnector import LMNLdapReader, UserWriter
+from linuxmusterTools.ldapconnector import LMNLdapReader, LMNUser
 
 
 @component(AuthenticationProvider)
@@ -77,7 +77,7 @@ class LMAuthenticationProvider(AuthenticationProvider):
             schoolmgr.switch(active_school)
             self.context.schoolmgr = schoolmgr
             self.context.ldapreader = LMNLdapReader
-            self.context.userwriter = UserWriter
+            self.context.userwriter = LMNUser(username)
 
             def schoolget(*args, **kwargs):
                 """

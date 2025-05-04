@@ -34,7 +34,7 @@ class Handler(HttpPlugin):
         value = http_context.json_body()['value']
 
         try:
-            self.context.userwriter.setattr(user, data={f'sophomorixCustom{index}': value})
+            self.context.userwriter.setattr(data={f'sophomorixCustom{index}': value})
         except Exception as e:
             raise EndpointError(str(e))
 
@@ -57,7 +57,7 @@ class Handler(HttpPlugin):
         value = http_context.json_body()['value']
 
         try:
-            self.context.userwriter.setattr(user, data={f'sophomorixCustomMulti{index}': value}, add=True)
+            self.context.userwriter.setattr(data={f'sophomorixCustomMulti{index}': value}, add=True)
         except Exception as e:
             raise EndpointError(str(e))
 
@@ -80,7 +80,7 @@ class Handler(HttpPlugin):
         value = http_context.json_body()['value']
 
         try:
-             self.context.userwriter.delattr(user, data={f'sophomorixCustomMulti{index}': value})
+             self.context.userwriter.delattr(data={f'sophomorixCustomMulti{index}': value})
         except Exception as e:
             raise EndpointError(str(e))
 
@@ -103,7 +103,7 @@ class Handler(HttpPlugin):
         address = http_context.json_body()['address']
 
         try:
-            self.context.userwriter.setattr(user, data={'proxyAddresses': address}, add=True)
+            self.context.userwriter.setattr(data={'proxyAddresses': address}, add=True)
         except Exception as e:
             raise EndpointError(str(e))
 
@@ -126,7 +126,7 @@ class Handler(HttpPlugin):
         address = http_context.json_body()['address']
 
         try:
-             self.context.userwriter.delattr(user, data={'proxyAddresses': address})
+             self.context.userwriter.delattr(data={'proxyAddresses': address})
         except Exception as e:
             raise EndpointError(str(e))
 

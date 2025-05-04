@@ -38,7 +38,7 @@ class Handler(HttpPlugin):
     @endpoint(api=True)
     def handle_api_session_sessions(self, http_context):
         """
-        Determine encoding using sophomorix-check.
+        Determine encoding using LMNFile.
 
         :param http_context: HttpContext
         :type http_context: HttpContext
